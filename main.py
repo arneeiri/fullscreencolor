@@ -14,7 +14,7 @@ class MainHandler(webapp.RequestHandler):
         template_values = {
             'color': color,
             'url': self.request.url,
-            'path': self.request.host_url
+            'host': self.request.host_url
         }
         
         path = os.path.join(os.path.dirname(__file__), 'index.html')
